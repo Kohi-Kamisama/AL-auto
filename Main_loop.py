@@ -55,7 +55,7 @@ while x == 0:
 
         print(f'Opening {opening}/4')
 
-        if pyautogui.locateOnScreen(r'Atlas_img/Login.png'):
+        if Locate(r'Atlas_img/Login.png'):
             pyautogui.click(pyautogui.locateOnScreen(r'Atlas_img/Login.png'))
             time.sleep(10)
 

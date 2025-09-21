@@ -6,13 +6,14 @@ x = 0
 ss_c = 0
 end_date = ('04-11-2022')
 
+# Game_Shortcut
 
 def Scheduled_Maintenance():
     sm = True
     while sm == True:
-        if pyautogui.locateOnScreen(r'Atlas_img/Scheduled_Maintenance.png'):
+        if Locate(r'Atlas_img/Scheduled_Maintenance.png'):
             time.sleep(300)
-            pyautogui.click(pyautogui.locateOnScreen(r'Atlas_img/Scheduled_Maintenance.png'))
+            pyautogui.click(Locate(r'Atlas_img/Scheduled_Maintenance.png'))
             Sreen_Sot()
             Reset_Game()
         else:

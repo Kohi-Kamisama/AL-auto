@@ -59,7 +59,7 @@ while x == 0:
             pyautogui.click(pyautogui.locateOnScreen(r'Atlas_img/Login.png'))
             time.sleep(10)
 
-        if pyautogui.locateOnScreen(r'Atlas_img/Game_App.png'):
+        if Locate(r'Atlas_img/Game_App.png'):
             print('Found App')
             pyautogui.click(pyautogui.locateOnScreen(r'Atlas_img/Game_App.png'))
             time.sleep(5)

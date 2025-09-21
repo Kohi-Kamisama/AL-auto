@@ -5,18 +5,20 @@ import pyscreeze
 def Game_Shortcut():
     game_shortcut = False
     while game_shortcut == False:
+
         game_shortcut = pyautogui.locateOnScreen(r'Atlas_img/Game_Shortcut.png', confidence=.6)
+        try:
+            return game_shortcut
+        except pyautogui.ImageNotFoundException:
+            return False
     return game_shortcut
 
 
 def Locate(img):
-    print(pyautogui.locateOnScreen(img))
-    if pyautogui.locateOnScreen(img) == ImageNotFoundException:
-        print("Not found")
     try:
         return pyautogui.locateOnScreen(img)
-    except pyscreeze.ImageNotFoundException:
-        return none
+    except pyautogui.ImageNotFoundException:
+        return None
 
 
 reset_game = 'r'

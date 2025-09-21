@@ -10,6 +10,9 @@ def Game_Shortcut():
 
 
 def Locate(img):
+    print(pyautogui.locateOnScreen(img))
+    if pyautogui.locateOnScreen(img) == ImageNotFoundException:
+        print("Not found")
     try:
         return pyautogui.locateOnScreen(img)
     except pyscreeze.ImageNotFoundException:

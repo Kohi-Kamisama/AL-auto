@@ -74,7 +74,7 @@ while x == 0:
             pyautogui.click(pyautogui.locateOnScreen(r'Atlas_img/Blue_Square.png'))
             time.sleep(20)
 
-        elif pyautogui.locateOnScreen(r'Atlas_img/Map.png'):
+        elif Locate(r'Atlas_img/Map.png'):
             pyautogui.click(pyautogui.locateOnScreen(r'Atlas_img/Map.png'))
             time.sleep(2)
             if pyautogui.locateOnScreen(r'Atlas_img/Green_Map.png'):
@@ -83,19 +83,19 @@ while x == 0:
             else:
                 Reset_Game()
 
-        elif pyautogui.locateOnScreen(r'Atlas_img/Green_Map.png'):
+        elif Locate(r'Atlas_img/Green_Map.png'):
             game_open = True
             print('Opened')
 
-        elif pyautogui.locateOnScreen(r'Atlas_img/Scheduled_Maintenance.png'):
+        elif Locate(r'Atlas_img/Scheduled_Maintenance.png'):
             Scheduled_Maintenance()
 
-        elif pyautogui.locateOnScreen(r'Atlas_img/Loading.png'):
+        elif Locate(r'Atlas_img/Loading.png'):
             time.sleep(20)
             if pyautogui.locateOnScreen(r'Atlas_img/Loading.png'):
                 Reset_Game()
 
-        elif pyautogui.locateOnScreen(r'Atlas_img/Connection_Failed.png'):
+        elif Locaterrrrrr(r'Atlas_img/Connection_Failed.png'):
             Reset_Game()
 
 
